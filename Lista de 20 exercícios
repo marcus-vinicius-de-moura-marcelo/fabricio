@@ -1,0 +1,608 @@
+QUESTAO 1
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Integer X;
+    Integer Y;
+    Integer resto;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Digite o dividendo.");
+    X = entrada.nextInt();
+    
+    System.out.println("Digite o divisor.");
+    Y= entrada.nextInt();
+    
+    resto = X%Y;
+    
+    System.out.println("Este é o resto de sua divisão: " + resto);
+    
+  }
+}
+
+QUESTAO 2
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double dolar;
+    Double real;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Quantos dólares você possui?");
+    dolar = entrada.nextDouble();
+    
+    real = dolar*4.95;
+    System.out.println("Você possui essa quantidade, em reais: " + real);
+    
+      
+  }
+}
+
+QUESTAO 3
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double raio;
+    Double pi;
+    Double area;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Digite o valor do raio de seu círculo, logo, será calculado a área dele.");
+    raio = entrada.nextDouble();
+    pi = 3.14;
+    area = pi*(raio*raio);
+    
+    System.out.println("Este é o valor da área de seu círculo: " + area);
+  }
+}
+
+QUESTAO 4
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double nota1;
+    Double nota2;
+    Double nota3;
+    Double media;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Qual valor de sua primeira nota?");
+    nota1 = entrada.nextDouble();
+    
+    System.out.println("Qual valor de sua segunda nota?");
+    nota2 = entrada.nextDouble();
+    
+    System.out.println("Qual valor de sua terceira nota?");
+    nota3 = entrada.nextDouble();
+    
+    media = (nota1 + nota2 + nota3)/3;
+    
+    System.out.println("Esta é a média de suas notas em suas três provas " + media);
+    
+  }
+}
+
+QUESTAO 5 
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double bruto;
+    Double valorHora;
+    Double horas;
+    Double inss;
+    Double liquido;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+   
+    System.out.println("Qual valor da sua hora trabalhada?");
+    valorHora = entrada.nextDouble();
+    
+    System.out.println("Quantas horas você trabalha por mês?");
+    horas = entrada.nextDouble();
+    
+    bruto = horas*valorHora;
+    
+    System.out.println("Seu salário bruto é R$ " + bruto + ", " + "porém existe o desconto do INSS, que é de 10%" + '.');
+    inss = bruto*0.1;
+    liquido = bruto-inss;
+   
+    System.out.println("Portanto, seu salário líquido é R$ " + liquido);
+    
+  }
+}
+
+QUESTAO 6
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+   Integer A;
+   Integer B;
+   
+   Scanner entrada = new Scanner(System.in);
+   
+   System.out.println("Defina o valor inteiro de A:");
+   B = entrada.nextInt();
+   
+   System.out.println("Agora, defina o valor inteiro de B:");
+   A = entrada.nextInt();
+    
+   System.out.println("Portanto, o valores invertidos de A e B são  " + A + " e " + B + ", respectivamente.");
+   
+    
+  }
+}
+
+QUESTAO 7
+import java.util.Scanner;
+
+// NÃO CONSEGUI REALIZAR ESTA QUESTÃO, ISSO ABAIXO FOI UMA DAS INUMERAS TENTATIVAS REALIZADAS
+class Main {
+  public static void main(String[] args) {
+    
+    Integer zero,um,dois,tres,quatro,cinco,seis,sete,oito,nove,dez;
+    Double quadrado0,quadrado1,quadrado2,quadrado3,quadrado4,quadrado5,quadrado6,quadrado7,quadrado8,quadrado9,quadrado10;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Quais números você deseja elevar ao quadrado?"); 
+   
+  }
+}
+
+QUESTAO 8
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double fahrenheit;
+    Double celsius;  
+    Double conversão;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Quanto graus Celsius está fazendo em sua cidade?");
+    celsius = entrada.nextDouble();
+    conversão = 33.8;
+    fahrenheit = celsius*conversão;
+    
+    
+    System.out.println("Em Fahrenheit,a temperatura de sua cidade é de " + conversão + " graus.");
+    
+    
+  }
+}
+
+QUESTAO 9
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+   Integer canetas;
+   Double pago;
+   Double troco;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Quantas canetas desejas comprar?");
+    canetas = entrada.nextInt();
+    
+    System.out.println("Quantos reais você pagará?");
+    pago = entrada.nextDouble();
+    
+    troco = pago-2*canetas;
+    System.out.println("Esse será seu troco recebido, considerando que cada caneta custa 2 reais: " + troco);
+    
+  }
+}
+
+QUESTAO 10
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    String hora;
+    Integer mints;
+    Integer passaram;
+    
+   // TIVE DIFICULDADE, PESQUISEI E TENTEI MAS NÃO COMPREENDI A QUESTÃO
+   
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Informe o horário em sua máquina.");
+    hora = entrada.nextLine();
+    
+    String[]partes = hora.split(":");
+    int horas = Integer.parseInt(partes[0]);
+    int minutos = Integer.parseInt(partes[1]);
+    
+    mints = horas*60;
+    int min = (horas*60) + minutos;
+    passaram = mints + minutos;
+    
+    System.out.println("Se passaram: " + passaram);
+    
+  }
+}
+
+QUESTAO 11
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double gasolina;
+    Double etanol;
+    
+    Scanner entrada = new Scanner(System.in);
+     System.out.println("O valor do etanol no posto no qual você deseja abastecer, está quantos por cento abaixo do valor da gasolina do mesmo?");
+    
+    etanol = entrada.nextDouble();
+    if (etanol > 70){
+      System.out.println("Coloque etanol em seu carro.");
+    }else {
+      System.out.println("Coloque gasolina.");
+    }
+
+  }
+}
+
+QUESTAO 12
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double largura;
+    Double comprimento;
+    Double area;
+    Double ceramica;
+    Double total;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Precisamos que você informe as dimensões do local e, para iniciar, informe e largura.");
+    largura = entrada.nextDouble();
+    
+    System.out.println("Agora, informe o comprimento");
+    comprimento = entrada.nextDouble();
+    
+    area = largura*comprimento;
+    System.out.println("A área do local da obra é de " + Math.round(area) + " + " + " 10% do acabamento" + ".");
+    
+    total = 0.1*Math.round(area) + Math.round(area);
+    System.out.println("Logo, o total é de: "  + total );
+    
+ 
+  }
+}
+
+QUESTAO 13
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Double largura;
+    Double comprimento;
+    Double area;
+    Double ceramica;
+    Double total;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Precisamos que você informe as dimensões do local e, para iniciar, informe e largura.");
+    largura = entrada.nextDouble();
+    
+    System.out.println("Agora, informe o comprimento");
+    comprimento = entrada.nextDouble();
+    
+    area = largura*comprimento;
+    System.out.println("A área do local da obra é de " + Math.round(area) + " + " + " 10% do acabamento" + ".");
+    
+    total = 0.1*Math.round(area) + Math.round(area);
+    System.out.println("Logo, o total é de: "  + total );
+    // até aqui, apenas colei o algoritmo da questão a ser incrementada.
+    
+    Double valor;
+    valor = total*15;
+    
+    System.out.println("Então, o valor do metro quadrado de nossa cerâmica é de 15 reais, então sua obra sairá por " + valor + " reais.");
+    
+      
+  }
+}
+
+QUESTAO 14
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double peso;
+    Double recomendado;
+    Double litros;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Quantos kg vc possui?");
+    peso = entrada.nextDouble();
+    
+    recomendado = peso*35;
+    litros=recomendado/1000;
+    
+    System.out.println("É recomendado que você ingira " + recomendado + "mL de água, que são " + litros + " litros de água.");
+    
+    
+  }
+}
+
+QUESTAO 15
+import java.util.Scanner;
+  
+class Main {
+  public static void main(String[] args) {
+    
+   Double x1;
+   Double x2;
+   Double y1;
+   Double y2;
+   Double distancia;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+   System.out.println("Qual a coordenada x1 de P1?");
+   x1 = entrada.nextDouble();
+   
+   System.out.println("Qual a coordenada y1 de P1?");
+   y1 = entrada.nextDouble();
+    
+   System.out.println("Qual a coordenada x2 de P2?");
+   x2 = entrada.nextDouble();
+   
+   System.out.println("Qual a coordenada y2 de P2?");
+   y2 = entrada.nextDouble();
+    
+   distancia = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+    
+   System.out.println("A distância entre os pontos é de " + distancia + "cm.");
+   
+    
+  }
+}
+
+QUESTAO 16
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+   Double primeira;
+   Double segunda;
+   Double terceira;
+   Double media;
+   
+  Scanner entrada = new Scanner(System.in);
+    
+  System.out.println("Quanto você tirou na primeira avaliação?");
+  primeira = entrada.nextDouble();
+  
+  System.out.println("Quanto você tirou na segunda avaliação?");
+  segunda = entrada.nextDouble();
+   
+  System.out.println("Quanto você tirou na terceira avaliação?");
+  terceira = entrada.nextDouble();
+    
+  media = (primeira+segunda+terceira)/3;
+  
+  if(media >7){
+    System.out.println("Parabéns, você foi aprovado.");
+  } else{
+    System.out.println("Infelizmente, você não foi aprovado e precisará de realizar uma recuperação, já que sua media foi " + media);
+    
+  } 
+    
+  }
+}
+
+QUESTAO 17
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+     Double branco;
+     Double nulo;
+     Double valido;
+     Double cpc;
+     Double decimal_branco;
+     Double decimal_nulo;
+     Double decimal_valido;
+     String porcentagem_branco;
+     String porcentagem_nulo;
+     String porcentagem_valido;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Qual a quantidade de votos em branco?");
+    branco = entrada.nextDouble();
+    
+    System.out.println("Qual a quantidade de votos nulos?");
+    nulo = entrada.nextDouble();
+    
+    System.out.println("Qual a quantidade de votos válidos?");
+    valido = entrada.nextDouble();
+    
+    cpc = branco + nulo + valido;
+    decimal_branco = (branco/cpc)*100;
+    decimal_nulo= (nulo/cpc)*100;
+    decimal_valido= (valido/cpc)*100;
+    
+    porcentagem_branco = decimal_branco + "%";
+    porcentagem_nulo = decimal_nulo + "%";
+    porcentagem_valido = decimal_valido + "%";
+    
+    System.out.println("A porcentagem de votos em branco, foi de " + porcentagem_branco);
+    System.out.println("A porcentagem de votos nulos, foi de " + porcentagem_nulo);
+    System.out.println("A porcentagem de votos válidos, foi de " + porcentagem_valido);
+    
+    
+  }
+}
+
+QUESTAO 18
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Integer idade;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Qual a sua idade?");
+    idade = entrada.nextInt();
+    
+    if(idade >65){
+    System.out.println("Eleitor facultativo.");
+      
+  } else  if(idade < 16) {
+    System.out.println("Não é eleitor.");    
+      
+//um erro na linha abaixo que nao consegui de resolver de maneira alguma      
+  } else  if(idade >17 < = 65){
+    System.out.println("Eleitor obrigatório.");
+       
+  }else if(idade > 15 < 18) {
+    System.out.println("Eleitor facultativo.");
+   
+      
+    } 
+    
+  }
+}
+
+QUESTAO 19
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+   String nome;
+    Double saldo;
+    Double extrato;
+    Integer deposito;
+    Integer saque;
+    Integer sair;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.println("Digite o seu nome: ");
+    nome = entrada.next();
+    System.out.println("Olá " + nome + ". Seja bem-vindo(a)!");
+    
+    
+    System.out.println("Digite 1 para ver o saldo ");
+    System.out.println("Digite 2 para ver o extrato ");
+    System.out.println("Digite 3 para realizar um depósito ");
+    System.out.println("Digite 4 para realizar um saque ");
+    System.out.println("Digite 5 para sair ");
+    
+    
+    Integer teste;
+    
+    System.out.println();
+    teste = entrada.nextInt();
+    
+    switch(teste){
+      case 1:
+        System.out.println("Seu saldo é de: R$9.000,00");
+        saldo = entrada.nextDouble();
+        break;
+        
+      case 2:
+        System.out.println("Nenhuma transação efetuada.");
+        break;
+        
+      case 3:
+        System.out.println("Insira a quantia para depósito: ");
+        deposito = entrada.nextInt();
+        break;
+        
+        
+      case 4:
+        System.out.println("Insira a quantia para saque: ");
+        saque = entrada.nextInt();
+        break;
+        
+      case 5:
+        System.out.println("Você saiu do sistema.");
+    
+    
+  }
+}
+}
+
+QUESTAO 20
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Double valor;
+    String nome;
+    Integer quantidade;
+    Double desconto;
+    Double total;
+    Double pagar;
+    Double pagar2;
+    Scanner entrada = new Scanner (System.in);
+    
+    System.out.print("Qual o nome do produto? ");
+    nome = entrada.next();
+    
+    System.out.print("Quantas unidades desse produto pretende comprar? ");
+    quantidade = entrada.nextInt();
+    
+    System.out.print("Qual o valor unitario desse produto? ");
+    valor = entrada.nextDouble();
+    
+    desconto = 0.0;
+    
+    total = quantidade * valor;
+    
+    if (quantidade <= 5 ) {
+      desconto = 0.02;
+    }
+    if (quantidade > 5 && quantidade<= 10){
+      desconto = 0.03;
+    }
+    if (quantidade > 10 && quantidade < 30) {
+      desconto = 0.05;
+    }
+    if (quantidade >= 30) {
+      desconto = 0.10;
+    }    
+    pagar = total * desconto;
+    pagar2 = total - pagar;
+    
+    System.out.println("O valor total a pagar de " + nome + " é " + pagar2 + " reais.");
+    
+  }
+}
+
